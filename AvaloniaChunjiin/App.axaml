@@ -1,0 +1,13 @@
+<Application
+    RequestedThemeVariant="Default"
+    x:Class="AvaloniaChunjiin.App"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!--  "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options.  -->
+
+    <Application.Styles>
+        <FluentTheme />
+        <StyleInclude Source="Components/KeyButton.axaml" />
+        <StyleInclude Source="Components/KeyPad.axaml" />
+    </Application.Styles>
+</Application>

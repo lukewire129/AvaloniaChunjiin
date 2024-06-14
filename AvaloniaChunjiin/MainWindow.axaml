@@ -1,0 +1,140 @@
+<Window
+    Height="750"
+    Title="AvaloniaChunjiin"
+    Width="440"
+    d:DesignHeight="750"
+    d:DesignWidth="440"
+    mc:Ignorable="d"
+    x:Class="AvaloniaChunjiin.MainWindow"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:components="clr-namespace:AvaloniaChunjiin.Components"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Window.Styles>
+        <Style Selector="Button">
+            <Setter Property="Width" Value="100" />
+            <Setter Property="Height" Value="80" />
+            <Setter Property="CornerRadius" Value="10" />
+        </Style>
+        <Style Selector="Button,Label">
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="HorizontalContentAlignment" Value="Center" />
+            <Setter Property="FontSize" Value="32" />
+            <Setter Property="FontWeight" Value="UltraBold" />
+        </Style>
+    </Window.Styles>
+    <Grid RowDefinitions="*, Auto, *">
+        <ListBox Grid.Row="0" ItemsSource="{Binding Alltext}" />
+        <TextBox
+            Grid.Row="1"
+            IsReadOnly="True"
+            Text="{Binding Text}" />
+        <!-- <ListBox Grid.Row="2" ItemsSource="{Binding KeyPadModels}" /> -->
+        <components:KeyPad Grid.Row="2" ItemsSource="{Binding KeyPadModels}" />
+        <!--  <Grid  -->
+        <!--  ColumnDefinitions="Auto, Auto, Auto, *"  -->
+        <!--  Grid.Row="2"  -->
+        <!--  RowDefinitions="Auto, Auto,Auto, Auto">  -->
+        <!--  <Button  -->
+        <!--  Command="{Binding KeypadCommand}"  -->
+        <!--  CommandParameter="0"  -->
+        <!--  Content="ㅣ"  -->
+        <!--  Grid.Column="0"  -->
+        <!--  Grid.Row="0" />  -->
+        <!--  <Button  -->
+        <!--  Command="{Binding KeypadCommand}"  -->
+        <!--  CommandParameter="1"  -->
+        <!--  Content="·"  -->
+        <!--  Grid.Column="1"  -->
+        <!--  Grid.Row="0" />  -->
+        <!--  <Button  -->
+        <!--  Command="{Binding KeypadCommand}"  -->
+        <!--  CommandParameter="2"  -->
+        <!--  Content="ㅡ"  -->
+        <!--  Grid.Column="2"  -->
+        <!--  Grid.Row="0" />  -->
+        <!--  <Button  -->
+        <!--  Command="{Binding KeypadCommand}"  -->
+        <!--  CommandParameter="back"  -->
+        <!--  Content="←"  -->
+        <!--  Grid.Column="3"  -->
+        <!--  Grid.Row="0" />  -->
+        <!--  <Button  -->
+        <!--  Command="{Binding KeypadCommand}"  -->
+        <!--  CommandParameter="3"  -->
+        <!--  Content="ㄱㅋ"  -->
+        <!--  Grid.Column="0"  -->
+        <!--  Grid.Row="1" />  -->
+        <!--  <Button  -->
+        <!--  Command="{Binding KeypadCommand}"  -->
+        <!--  CommandParameter="4"  -->
+        <!--  Content="ㄴㄹ"  -->
+        <!--  Grid.Column="1"  -->
+        <!--  Grid.Row="1" />  -->
+        <!--  <Button  -->
+        <!--  Command="{Binding KeypadCommand}"  -->
+        <!--  CommandParameter="5"  -->
+        <!--  Content="ㄷㅌ"  -->
+        <!--  Grid.Column="2"  -->
+        <!--  Grid.Row="1" />  -->
+        <!--  <Button  -->
+        <!--  Command="{Binding KeypadCommand}"  -->
+        <!--  CommandParameter="Enter"  -->
+        <!--  Content="⏎"  -->
+        <!--  Grid.Column="3"  -->
+        <!--  Grid.Row="1" />  -->
+        <!--  <Button  -->
+        <!--  Command="{Binding KeypadCommand}"  -->
+        <!--  CommandParameter="6"  -->
+        <!--  Content="ㅂㅍ"  -->
+        <!--  Grid.Column="0"  -->
+        <!--  Grid.Row="2" />  -->
+        <!--  <Button  -->
+        <!--  Command="{Binding KeypadCommand}"  -->
+        <!--  CommandParameter="7"  -->
+        <!--  Content="ㅅㅎ"  -->
+        <!--  Grid.Column="1"  -->
+        <!--  Grid.Row="2" />  -->
+        <!--  <Button  -->
+        <!--  Command="{Binding KeypadCommand}"  -->
+        <!--  CommandParameter="8"  -->
+        <!--  Content="ㅈㅊ"  -->
+        <!--  Grid.Column="2"  -->
+        <!--  Grid.Row="2" />  -->
+        <!--  <Button  -->
+        <!--  Command="{Binding KeypadCommand}"  -->
+        <!--  CommandParameter="AllClear"  -->
+        <!--  Content="◀"  -->
+        <!--  Grid.Column="3"  -->
+        <!--  Grid.Row="2" />  -->
+        <!--  <Button  -->
+        <!--  Command="{Binding KeypadCommand}"  -->
+        <!--  CommandParameter="Change"  -->
+        <!--  Content="한/영"  -->
+        <!--  Grid.Column="0"  -->
+        <!--  Grid.Row="3" />  -->
+        <!--  <Button  -->
+        <!--  Command="{Binding KeypadCommand}"  -->
+        <!--  CommandParameter="9"  -->
+        <!--  Content="ㅇㅁ"  -->
+        <!--  Grid.Column="1"  -->
+        <!--  Grid.Row="3" />  -->
+        <!--    -->
+        <!--  <Button  -->
+        <!--  Command="{Binding KeypadCommand}"  -->
+        <!--  CommandParameter="SpaceBar"  -->
+        <!--  Grid.Column="2"  -->
+        <!--  Grid.ColumnSpan="2"  -->
+        <!--  Grid.Row="3">  -->
+        <!--    -->
+        <!--         <Button.Content> -->
+        <!--             <Viewbox> -->
+        <!--                 <Label Content="SpaceBar" /> -->
+        <!--             </Viewbox> -->
+        <!--         </Button.Content> -->
+        <!--     </Button> -->
+        <!-- </Grid> -->
+    </Grid>
+</Window>
